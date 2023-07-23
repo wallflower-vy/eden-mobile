@@ -9,8 +9,64 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: 'YourFontFamilyName';
+            src: url('fonts/your-Cerebri.ttf') format('truetype'); 
+          
+        }
+    </style>
 </head>
 <body>
-    <i class="fa-solid fa-arrow-left"></i>
+  <section>
+   <app-nav></app-nav>
+  </section>
+
+  <section>
+   <div class="header">
+    <div class="icon-box"><i class="fa-solid fa-arrow-left arrow-left"></i></div>
+   <div class="title-box"> <h2 class="header-title">Review your plan</h2></div>
+   </div>
+  </section>
+  <section>
+   <div class="step">
+    <img src="/assets/step.png" alt="">
+   </div>
+  </section>
+  <section class="review-box">
+    <h1>Review your plan</h1>
+    <p class="review-text">Here's a summary of your Eden life. Let me tell you, your life is about to become waayyy easier. </p>
+  </section>
+  <section >
+    <div >
+        <div class="plans">
+            <h3>Your Plan Details</h3>
+            <p >Add or Remove Services</p>
+        </div>
+       <app-accordion></app-accordion>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="date-code">
+        <div class="date">
+           <p>Start date</p> 
+           <p class="date-text">Choose your start date</p>
+        </div>
+        <div class="choose-day">
+            <img src="/assets/error.png" alt=""> 
+            <h4>Choose your start date to pay.</h4>
+
+        </div>
+
+    </div>
+    <div class="discount">
+        <p class="discount-text">Discount Code</p>
+
+    </div>
+  </section>
 </body>
+<script src="component.js"></script>
+<script src="main.js"></script>
 </html>
