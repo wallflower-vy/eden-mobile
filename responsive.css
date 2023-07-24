@@ -421,8 +421,11 @@
  }
 .call-text-box{
     margin-top: 1rem;
-    width: 80%;
+    width: 90%;
 
+}
+.call-text-box p{
+    font-size: 14px;
 }
 .call-img-box{
     margin-top: 3rem;
@@ -457,12 +460,23 @@
     border: none;
     padding:.4rem .7rem;
     cursor: pointer;
+    font-size: 12px;
 }
 .fries-box{
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+.bbq-text{
+    font-size: 14px;
+    color:#0F241B;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+.french-fries{
+    color:#4B6358;
+    font-size: 12px;
 }
 .fries-img{
     border-radius: 8px;
@@ -475,6 +489,10 @@
 }
 .clock{
     margin-top: 1rem;
+}
+.clock span{
+    color:#1D352A;
+    font-size: 12px;
 }
 .home-delivery{
     border: 1px solid #ffebb2;
@@ -499,10 +517,15 @@
     border: none;
     padding:.4rem .7rem;
     cursor: pointer;
+    font-size: 12px;
 }
 .home-delivery-text{
     margin-top: 1rem;
    
+}
+.home-delivery-text p{
+    font-size: 14px;
+    line-height: 20px;
 }
 .home-footer{
     display: flex;
@@ -513,11 +536,16 @@
 }
 .footer-icon{
     text-align: center;
-    color:#03A84E
+    color:#03A84E;
+    font-size: 12px;
+
 }
+
 .footer-icons{
     text-align: center;
-    color:#8AA398
+    color:#8AA398;
+    font-size: 12px;
+
 }
 .profile-page{
    
@@ -582,6 +610,7 @@
   .order-text{
     font-size: 16px;
     color: #0F241B;
+    margin-top: .4rem;
   }
   .dotted-border{
     border: 2px dotted #CBD8D2;
@@ -621,11 +650,15 @@
     align-items: center;
     gap: 1rem;
   }
+  .order-time{
+    font-size: 12px;
+    color:#4B6358;
+  }
   .order-arrived{
     border-left: 2px dotted #03A84E;
     margin-left: .5rem;
     padding:.5rem 1.5rem ;
-    height: 5rem;
+    height: 4rem;
   }
   .order-arrived p{
     font-size: 14px;
@@ -644,6 +677,7 @@
   .dotted-boxheader{
     display: flex;
     justify-content: space-between;
+    /* background-color: red; */
     align-items: center;
   }
 }
