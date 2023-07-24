@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body>
+<body class="profile-page">
     <section>
         <div>
             <app-nav></app-nav>
@@ -77,7 +77,7 @@
         <div class="food-delivery home-delivery">
             <div class="delivery-title-box"> 
                 <div class="delivery-box"><span  class='home-span'>Home Cleaning</span> <img src="./assets/house.png" alt=""></div>
-                <button class="home-delivery-btn">View Status <i class="fa-solid fa-chevron-right"></i></button>
+                <button class="home-delivery-btn" id="showCleaningModal">View Status <i class="fa-solid fa-chevron-right"></i></button>
             </div>
 
             <div class="home-delivery-text">
@@ -122,29 +122,159 @@
         <p>Mon, 08 Sep 2021.</p>
      <i class="fa-regular fa-circle-xmark close-btn" id="closeModalBtn"></i>
       </div>
+
+      <div class="food-order">
+        <div>
+            <img src="./assets/food2.png" alt="">
+
+        </div>
+        <div>
+            <p class="order-status">Order Status</p>
+            <p class="order-text">Order has arrived</p>
+        </div>
+      </div>
+
+      <div class="dotted-border">
+        <p class="dotted-add">Delivery Address</p>
+        <p class="dotted-add2">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+      </div>
+
+
+      <div class="main-order-box">
+       <div class="dotted-boxheader">
+      <div class="order-sub"><img src="./assets/locate.png" />
+        <p class="order-title">Order has arrived</p>
+    </div>
+        <p>10:56 AM</p>
+       </div>
+        <div class="order-arrived">
+            
+            <p>Your order has arrived at your location. Pick it up!</p>
+        </div>
+
+      </div>
+      <div class="main-order-box">
+        <div class="dotted-boxheader">
+       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Order on the way</p></div>
+         <p>9:14 AM</p>
+        </div>
+         <div class="order-arrived">
+            
+             <p>Your order has been dispatched and is on the way to you.</p>
+         </div>
+ 
+       </div>
+    </div>
+  </div>
+
+
+  <div class="home-modal " id="cleaningModal">
+    <div class="modal-content cleaning-modal">
+     
+      <div class="modal-header">
+        <p>Mon, 08 Sep 2021.</p>
+        <i class="fa-regular fa-circle-xmark close-btn" id="closecleaningModalBtn"></i>
+      </div>
+
+      <div class="food-order">
+        <div>
+            <img src="./assets/food2.png" alt="">
+
+        </div>
+        <div>
+            <p class="order-status">Order Status</p>
+            <p class="order-text">Order has arrived</p>
+        </div>
+      </div>
+
+      <div class="dotted-border">
+        <p class="dotted-add">Cleaning Address</p>
+        <p class="dotted-add2">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+      </div>
+      <div class="dotted-border no-space">
+        <p class="dotted-add">Cleaner</p>
+        <p class="dotted-add2">Kelechi Oguike.</p>
+      </div>
+
+
+      <div class="main-order-box">
+       <div class="dotted-boxheader">
+      <div class="order-sub"> <i class="fa-solid fa-check" ></i> 
+        <p class="order-title">Cleaning completed</p>
+    </div>
+        <p>10:56 AM</p>
+       </div>
+        <div class="order-arrived">
+            
+            <p class="order-green">Give feedback.</p>
+        </div>
+
+      </div>
+      <div class="main-order-box">
+        <div class="dotted-boxheader">
+       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaning started</p></div>
+         <p>9:14 AM</p>
+        </div>
+         <div class="order-arrived">
+            
+             <p>Your cleaner has started cleaning.</p>
+         </div>
+ 
+       </div>
+       <div class="main-order-box">
+        <div class="dotted-boxheader">
+       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaner has arrived</p></div>
+         <p>9:14 AM</p>
+        </div>
+         <div class="order-arrived">
+            
+             <p>Your cleaner has arrived at your location..</p>
+         </div>
+ 
+       </div>
+       <div class="main-order-box">
+        <div class="dotted-boxheader">
+       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaner en route</p></div>
+         <p>9:14 AM</p>
+        </div>
+         <div class="order-arrived">
+            
+             <p>Your cleaner is on the way to your location!.</p>
+         </div>
+ 
+       </div>
     </div>
   </div>
 
 
 
 
-
-
-
     <script>
     const showModalBtn = document.getElementById('showModalBtn');
+    const showCleaningModal = document.getElementById('showCleaningModal');
+    
 const bottomModal = document.getElementById('bottomModal');
+const cleaningModal = document.getElementById('cleaningModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
+const closecleaningModalBtn =document.getElementById('closecleaningModalBtn')
 
 showModalBtn.addEventListener('click', () => {
   bottomModal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+});
+
+showCleaningModal.addEventListener('click', () => {
+    cleaningModal.style.display = 'block';
 });
 
 closeModalBtn.addEventListener('click', () => {
   bottomModal.style.display = 'none';
-});
-
-
+  document.body.style.overflow = 'auto'; 
+})
+closecleaningModalBtn.addEventListener('click', () => {
+    cleaningModal.style.display = 'none';
+  document.body.style.overflow = 'auto'; 
+})
     </script>
     
 </body>
