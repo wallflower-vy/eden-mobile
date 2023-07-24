@@ -5,7 +5,7 @@
 }
 @media screen and (max-width: 600px) {
   body {
-    padding: 1rem;
+    padding: 1.5rem;
     overflow-x:hidden;
   }
   .nav {
@@ -25,9 +25,14 @@
   .header {
     display: flex;
     align-items: center;
+    gap: 1rem;
     margin-top: 1.5rem;
   }
-
+  .header-title{
+    font-size: 16px;
+    color:#0F241B;
+    font-weight: bold;
+  }
   .icon-box {
     background-color: #f0f4f2;
     width: 40px;
@@ -48,7 +53,7 @@
     margin-top: 2rem;
   }
   .review-box {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
   }
   .review-box h1 {
     font-family: "Cerebri Sans", sans-serif;
@@ -57,7 +62,7 @@
   .review-text {
     color: #4b6358;
     margin-top: 1rem;
-    font-size: 1.13rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
   }
@@ -69,12 +74,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
   }
   .plans p {
     color: #03a84e;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+  }
+  .plans h3{
+    font-size: 16px;
   }
   .accordion {
     margin-top: 1rem;
