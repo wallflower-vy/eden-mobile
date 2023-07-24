@@ -2,8 +2,8 @@ class nav extends HTMLElement{
     connectedCallback(){
         this.innerHTML=`
         <nav class="nav">
-        <b class="time">9:41</b>
-        <img src="/assets/wifi.png" alt="wifi" srcset="">
+       <div> <b class="time">9:41</b></div>
+       <div> <img src="/assets/wifi.png" alt="wifi" srcset=""></div>
     </nav>
         `
     }
