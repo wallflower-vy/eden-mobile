@@ -27,3 +27,34 @@ document.addEventListener("DOMContentLoaded", function() {
           
     }).then(() => jsConfetti.addConfetti())
   });
+
+const showModalBtn = document.getElementById('showModalBtn');
+const bottomModal = document.getElementById('bottomModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+showModalBtn.addEventListener('click', () => {
+    console.log('clicked')
+//   bottomModal.style.display = 'block';
+});
+ 
+closeModalBtn.addEventListener('click', () => {
+    console.log('button clicked')
+  bottomModal.style.display = 'none';
+});
+
+
+
+
+function show() {
+  alert('Button is clicked!');
+}
+
+const myButton = document.getElementById('myButton');
+
+// Define the onclick function
+function onClickFunction() {
+    alert('Button clicked!');
+}
+
+// Attach the onclick function to the button
+myButton.onclick = onClickFunction;

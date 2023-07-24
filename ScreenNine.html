@@ -16,7 +16,137 @@
             <app-nav></app-nav>
         </div>
     </section>
+    <section>
+        <div class="screennine-box">
+            <div class="ham-box">
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <p>Hi, Aderinsola!</p>
+            </div>
+            <div>
+                <img src="./assets/profile.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="screenine-menu">
+            <div class="home-text">Home</div>
+            <div class="Upcoming">Upcoming</div>
+
+        </div>
+    </section>
+    <section>
+        <div class="call-box">
+           <div>
+            <h4>Tap here to call us</h4>
+            <div class="call-text-box"><p>Do you have any inquiry about your meals? You can simply tap to call us.</p></div>
+           </div>
+           <div class="call-img-box">
+            <img src="./assets/big-meal.png" alt="">
+           </div>
+        </div>
+       
+    </section>
+
+    <section>
+        <div class="food-delivery">
+            <div class="delivery-title-box"> 
+                <div class="delivery-box"><span>Food Delivery</span> <img src="./assets/food.png" alt=""></div>
+                <button  class="delivery-btn"  id="showModalBtn">View Status <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+
+            <div class="fries-box">
+                <img src="./assets/fries.png" alt="" class="fries-img">
+                <div class="main-fries">
+                    <p>French Fries with</p>
+                    <p>BBQ Turkey Wings & Coleslaw</p>
+                </div>
+            </div>
+
+            <div class="border-line"></div>
+            <div class="clock">
+                <i class="fa-regular fa-clock"></i>  <span>10:00 AM - 11:30 AM</span>
+            </div>
+
+        </div>
+
+
+         
+
+        <div class="food-delivery home-delivery">
+            <div class="delivery-title-box"> 
+                <div class="delivery-box"><span  class='home-span'>Home Cleaning</span> <img src="./assets/house.png" alt=""></div>
+                <button class="home-delivery-btn">View Status <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="home-delivery-text">
+                <p>Get ready; our cleaner is coming to get your house pampered.</p>
+            </div>
+          
+
+            <div class="home-border-line"></div>
+            <div class="clock">
+                <i class="fa-regular fa-clock"></i>  <span>10:00 AM - 11:30 AM</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="home-footer"> 
+                <div class="footer-icon">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </div>
+                <div  class="footer-icons" >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p>History</p>
+                </div>
+                <div  class="footer-icons">
+                    <i class="fa-regular fa-bell"></i>
+                    <p>Notification</p>
+                </div>
+                <div  class="footer-icons">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p> Gardener</p>
+                </div>
+        </div>
+    </section>
+
+ 
+ <div class="home-modal" id="bottomModal">
+    <div class="modal-content">
+     
+      <div class="modal-header">
+        <p>Mon, 08 Sep 2021.</p>
+     <i class="fa-regular fa-circle-xmark close-btn" id="closeModalBtn"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <script>
+    const showModalBtn = document.getElementById('showModalBtn');
+const bottomModal = document.getElementById('bottomModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+showModalBtn.addEventListener('click', () => {
+  bottomModal.style.display = 'block';
+});
+
+closeModalBtn.addEventListener('click', () => {
+  bottomModal.style.display = 'none';
+});
+
+
+    </script>
+    
 </body>
-<script src="component.js"></script>
-<script src="main.js"></script>
+
 </html>
