@@ -5,7 +5,7 @@
   font-family: "cerebri";
 }
 .nav {
-  display: flex;
+  display: none;
   
 }
 .header {
@@ -297,6 +297,340 @@
   line-height: 24px;
   margin-top: 2rem;
   font-weight: 400;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4b6358;
+  border-radius: 50%;
+}
+.ham-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.ham-box p {
+  color: #0f241b;
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+  line-height: 28px;
+  font-weight: 700;
+}
+.screennineBox {
+  /* background-color: red; */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.screenine-menu {
+  background-color: #f0f4f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+.Upcoming {
+  width: 60%;
+
+  text-align: center;
+  color: #0f241b;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.home-text {
+  background-color: #fff;
+  font-size: 14px;
+  color: #0f241b;
+  font-weight: 400;
+  border-radius: 8px;
+  width: 40%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.call-box {
+  border: 3px solid #98dcaf;
+  background-color: #03a84e;
+  color: #fff;
+  padding: 1.5rem 0rem 0rem 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  display: flex;
+  height: fit-content;
+}
+.call-box h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+.call-box p {
+  font-size: 14px;
+}
+.call-text-box {
+  margin-top: 1rem;
+  width: 90%;
+}
+.call-text-box p {
+  font-size: 14px;
+}
+.call-img-box {
+  margin-top: 3rem;
+}
+.food-delivery {
+  background-color: #e9fbf2;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #03a84e;
+  border-radius: 8px;
+}
+.delivery-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.delivery-box span {
+  color: #03a84e;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.delivery-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery-btn {
+  color: #03a84e;
+  border-radius: 8px;
+  background-color: #bbd6c9;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 12px;
+}
+.fries-box {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.bbq-text {
+  font-size: 14px;
+  color: #0f241b;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.french-fries {
+  color: #4b6358;
+  font-size: 12px;
+}
+.fries-img {
+  border-radius: 8px;
+}
+.border-line {
+  border-bottom: 2px solid #bdeecd;
+  margin-top: 1rem;
+  width: 100%;
+  height: 0.5rem;
+}
+.clock {
+  margin-top: 1rem;
+}
+.clock span {
+  color: #1d352a;
+  font-size: 12px;
+}
+.home-delivery {
+  border: 1px solid #ffebb2;
+  margin-top: 2rem;
+  background-color: #fffdf5;
+}
+.delivery-box .home-span {
+  color: #ff9800;
+  font-weight: 400;
+  font-size: 16px;
+}
+.home-border-line {
+  border-bottom: 1px solid #ffebb2;
+  margin-top: 1rem;
+  width: 100%;
+  height: 0.5rem;
+}
+.home-delivery-btn {
+  color: #ff9800;
+  border-radius: 8px;
+  background-color: #e1d6ab;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 12px;
+}
+.home-delivery-text {
+  margin-top: 1rem;
+}
+.home-delivery-text p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.home-footer {
+  display: flex;
+  margin-top: 2rem;
+  border-top: 1px solid #f1f4f2;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  justify-content: space-between;
+}
+.footer-icon {
+  text-align: center;
+  color: #03a84e;
+  font-size: 12px;
+}
+
+.footer-icons {
+  text-align: center;
+  color: #8aa398;
+  font-size: 12px;
+}
+.profile-page {
+  height: 100vh;
+  margin: 0;
+}
+.home-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+.order-green {
+  color: #03a84e;
+}
+.modal-content {
+  background-color: #ffff;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 20px;
+  /* padding-bottom: 30px; */
+  height: 38rem;
+  border-radius: 24px;
+  margin-top: 4rem;
+}
+
+.cleaning-modal {
+  height: fit-content;
+  margin-top: 1rem;
+}
+.modal-header {
+  display: flex;
+  border-radius: 16px;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.modal-header p {
+  font-size: 12px;
+  color: #4b6358;
+}
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  color: #4b6358;
+}
+
+.food-order {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.order-status {
+  font-size: 12px;
+  color: #4b6358;
+}
+.order-text {
+  font-size: 16px;
+  color: #0f241b;
+  margin-top: 0.4rem;
+}
+.dotted-border {
+  border: 2px dotted #cbd8d2;
+  padding: 1rem 1.5rem;
+  height: 6rem;
+  margin-top: 1rem;
+}
+.no-space {
+  margin-top: 0rem;
+  border-top: none;
+  height: 4rem;
+}
+.dotted-add {
+  font-size: 12px;
+  color: #4b6358;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.dotted-add2 {
+  color: #0f241b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.order-title {
+  color: #0f241b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main-order-box {
+  /* background-color: blue; */
+  margin-top: 1rem;
+}
+.order-sub {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order-time {
+  font-size: 12px;
+  color: #4b6358;
+}
+.order-arrived {
+  border-left: 2px dotted #03a84e;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  height: 3rem;
+}
+.order-arrived p {
+  font-size: 14px;
+  color: #4b6358;
+  line-height: 20px;
+}
+.fa-check {
+  color: #03a84e;
+  font-size: 26px;
+}
+.order-way {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  height: 7rem;
+}
+.dotted-boxheader {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  align-items: center;
 }
 @media screen and (max-width: 992px) {
   * {
@@ -868,7 +1202,7 @@
 
   .cleaning-modal {
     height: fit-content;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .modal-header {
     display: flex;
