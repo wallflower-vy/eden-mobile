@@ -1,286 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body class="profile-page">
+  </head>
+  <body class="profile-page">
     <section>
-        <!-- <div>
-            <app-nav></app-nav>
-        </div> -->
+      <div>
+        <app-nav></app-nav>
+      </div>
     </section>
     <section>
-        <div class="screennine-box">
-            <div class="ham-box">
-                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-            <p>Hi, Aderinsola!</p>
-            </div>
-            <div>
-                <img src="./assets/profile.png" alt="">
-            </div>
-        </div>
+      <app-screennine></app-screennine>
     </section>
 
     <section>
-        <div class="screenine-menu">
-            <div class="home-text">Home</div>
-            <div class="Upcoming">Upcoming</div>
-
-        </div>
+      <div class="screenine-menu">
+        <div class="home-text">Home</div>
+        <div class="Upcoming">Upcoming</div>
+      </div>
     </section>
     <section>
-        <div class="call-box">
-           <div>
-            <h4>Tap here to call us</h4>
-            <div class="call-text-box"><p>Do you have any inquiry about your meals? You can simply tap to call us.</p></div>
-           </div>
-           <div class="call-img-box">
-            <img src="./assets/big-meal.png" alt="">
-           </div>
+      <div class="call-box">
+        <div>
+          <h4>Tap here to call us</h4>
+          <div class="call-text-box">
+            <p>
+              Do you have any inquiry about your meals? You can simply tap to
+              call us.
+            </p>
+          </div>
         </div>
-       
+        <div class="call-img-box">
+          <img src="./assets/big-meal.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <section>
+      <div class="deliverySection">
         <div class="food-delivery">
-            <div class="delivery-title-box"> 
-                <div class="delivery-box"><span>Food Delivery</span> <img src="./assets/food.png" alt=""></div>
-                <button  class="delivery-btn"  id="showModalBtn">View Status <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="delivery-title-box">
+            <div class="delivery-box">
+              <span>Food Delivery</span> <img src="./assets/food.png" alt="" />
             </div>
-            
+            <button class="delivery-btn" id="showModalBtn">
+              View Status <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
 
-            <div class="fries-box">
-                <img src="./assets/fries.png" alt="" class="fries-img">
-                <div class="main-fries">
-                    <p class="french-fries">French Fries with</p>
-                    <p class="bbq-text">BBQ Turkey Wings & Coleslaw</p>
-                </div>
+          <div class="fries-box">
+            <img src="./assets/fries.png" alt="" class="fries-img" />
+            <div class="main-fries">
+              <p class="french-fries">French Fries with</p>
+              <p class="bbq-text">BBQ Turkey Wings & Coleslaw</p>
             </div>
+          </div>
 
-            <div class="border-line"></div>
-            <div class="clock">
-                <i class="fa-regular fa-clock"></i>  <span>10:00 AM - 11:30 AM</span>
-            </div>
-
+          <div class="border-line"></div>
+          <div class="clock">
+            <i class="fa-regular fa-clock"></i> <span>10:00 AM - 11:30 AM</span>
+          </div>
         </div>
-
-
-         
 
         <div class="food-delivery home-delivery">
-            <div class="delivery-title-box"> 
-                <div class="delivery-box"><span  class='home-span'>Home Cleaning</span> <img src="./assets/house.png" alt=""></div>
-                <button class="home-delivery-btn" id="showCleaningModal">View Status <i class="fa-solid fa-chevron-right"></i></button>
+          <div class="delivery-title-box">
+            <div class="delivery-box">
+              <span class="home-span">Home Cleaning</span>
+              <img src="./assets/house.png" alt="" />
             </div>
+            <button class="home-delivery-btn" id="showCleaningModal">
+              View Status <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
 
-            <div class="home-delivery-text">
-                <p>Get ready; our cleaner is coming to get your house pampered.</p>
-            </div>
-          
+          <div class="home-delivery-text">
+            <p>Get ready; our cleaner is coming to get your house pampered.</p>
+          </div>
 
-            <div class="home-border-line"></div>
-            <div class="clock">
-                <i class="fa-regular fa-clock"></i>  <span>10:00 AM - 11:30 AM</span>
-            </div>
-
+          <div class="home-border-line"></div>
+          <div class="clock">
+            <i class="fa-regular fa-clock"></i> <span>10:00 AM - 11:30 AM</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <section>
-        <div class="home-footer"> 
-                <div class="footer-icon">
-                    <i class="fa-solid fa-house"></i>
-                    <p>Home</p>
-                </div>
-                <div  class="footer-icons" >
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <p>History</p>
-                </div>
-                <div  class="footer-icons">
-                    <i class="fa-regular fa-bell"></i>
-                    <p>Notification</p>
-                </div>
-                <div  class="footer-icons">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <p> Gardener</p>
-                </div>
-        </div>
+      <app-homefooter></app-homefooter>
     </section>
 
- <!-- Modals -->
- <div class="home-modal" id="bottomModal">
-    <div class="modal-content">
-     
-      <div class="modal-header">
-        <p>Mon, 08 Sep 2021.</p>
-     <i class="fa-regular fa-circle-xmark close-btn" id="closeModalBtn"></i>
-      </div>
+    <!-- Modals -->
 
-      <div class="food-order">
-        <div>
-            <img src="./assets/food2.png" alt="">
-
+    <div class="home-modal" id="bottomModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Mon, 08 Sep 2021.</p>
+          <i
+            class="fa-regular fa-circle-xmark close-btn"
+            id="closeModalBtn"
+          ></i>
         </div>
-        <div>
+
+        <div class="food-order">
+          <div>
+            <img src="./assets/food2.png" alt="" />
+          </div>
+          <div>
             <p class="order-status">Order Status</p>
             <p class="order-text">Order has arrived</p>
+          </div>
         </div>
-      </div>
 
-      <div class="dotted-border">
-        <p class="dotted-add">Delivery Address</p>
-        <p class="dotted-add2">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
-      </div>
+        <div class="dotted-border">
+          <p class="dotted-add">Delivery Address</p>
+          <p class="dotted-add2">
+            No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+          </p>
+        </div>
 
-
-      <div class="main-order-box">
-       <div class="dotted-boxheader">
-      <div class="order-sub"><img src="./assets/locate.png" />
-        <p class="order-title">Order has arrived</p>
-    </div>
-        <p class="order-time">10:56 AM</p>
-       </div>
-        <div class="order-arrived">
-            
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <img src="./assets/locate.png" />
+              <p class="order-title">Order has arrived</p>
+            </div>
+            <p class="order-time">10:56 AM</p>
+          </div>
+          <div class="order-arrived">
             <p>Your order has arrived at your location. Pick it up!</p>
+          </div>
         </div>
-
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <i class="fa-solid fa-check"></i>
+              <p class="order-title">Order on the way</p>
+            </div>
+            <p class="order-time">9:14 AM</p>
+          </div>
+          <div class="order-arrived">
+            <p>Your order has been dispatched and is on the way to you.</p>
+          </div>
+        </div>
       </div>
-      <div class="main-order-box">
-        <div class="dotted-boxheader">
-       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Order on the way</p></div>
-         <p class="order-time">9:14 AM</p>
-        </div>
-         <div class="order-arrived">
-            
-             <p>Your order has been dispatched and is on the way to you.</p>
-         </div>
- 
-       </div>
     </div>
-  </div>
 
-
-  <div class="home-modal " id="cleaningModal">
-    <div class="modal-content cleaning-modal">
-     
-      <div class="modal-header">
-        <p>Mon, 08 Sep 2021.</p>
-        <i class="fa-regular fa-circle-xmark close-btn" id="closecleaningModalBtn"></i>
-      </div>
-
-      <div class="food-order">
-        <div>
-            <img src="./assets/home.png" alt="">
-
+    <div class="home-modal" id="cleaningModal">
+      <div class="modal-content cleaning-modal">
+        <div class="modal-header">
+          <p>Mon, 08 Sep 2021.</p>
+          <i
+            class="fa-regular fa-circle-xmark close-btn"
+            id="closecleaningModalBtn"
+          ></i>
         </div>
-        <div>
+
+        <div class="food-order">
+          <div>
+            <img src="./assets/home.png" alt="" />
+          </div>
+          <div>
             <p class="order-status">Order Status</p>
             <p class="order-text">Cleaning completed</p>
+          </div>
         </div>
-      </div>
 
-      <div class="dotted-border">
-        <p class="dotted-add">Cleaning Address</p>
-        <p class="dotted-add2">No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
-      </div>
-      <div class="dotted-border no-space">
-        <p class="dotted-add">Cleaner</p>
-        <p class="dotted-add2">Kelechi Oguike.</p>
-      </div>
+        <div class="dotted-border">
+          <p class="dotted-add">Cleaning Address</p>
+          <p class="dotted-add2">
+            No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.
+          </p>
+        </div>
+        <div class="dotted-border no-space">
+          <p class="dotted-add">Cleaner</p>
+          <p class="dotted-add2">Kelechi Oguike.</p>
+        </div>
 
-
-      <div class="main-order-box">
-       <div class="dotted-boxheader">
-      <div class="order-sub"> <i class="fa-solid fa-check" ></i> 
-        <p class="order-title">Cleaning completed</p>
-    </div>
-        <p class="order-time">10:56 AM</p>
-       </div>
-        <div class="order-arrived">
-            
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <i class="fa-solid fa-check"></i>
+              <p class="order-title">Cleaning completed</p>
+            </div>
+            <p class="order-time">10:56 AM</p>
+          </div>
+          <div class="order-arrived">
             <p class="order-green">Give feedback.</p>
+          </div>
         </div>
-
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <i class="fa-solid fa-check"></i>
+              <p class="order-title">Cleaning started</p>
+            </div>
+            <p class="order-time">9:14 AM</p>
+          </div>
+          <div class="order-arrived">
+            <p>Your cleaner has started cleaning.</p>
+          </div>
+        </div>
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <i class="fa-solid fa-check"></i>
+              <p class="order-title">Cleaner has arrived</p>
+            </div>
+            <p class="order-time">9:14 AM</p>
+          </div>
+          <div class="order-arrived">
+            <p>Your cleaner has arrived at your location..</p>
+          </div>
+        </div>
+        <div class="main-order-box">
+          <div class="dotted-boxheader">
+            <div class="order-sub">
+              <i class="fa-solid fa-check"></i>
+              <p class="order-title">Cleaner en route</p>
+            </div>
+            <p class="order-time">9:14 AM</p>
+          </div>
+          <div class="order-arrived">
+            <p>Your cleaner is on the way to your location!.</p>
+          </div>
+        </div>
       </div>
-      <div class="main-order-box">
-        <div class="dotted-boxheader">
-       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaning started</p></div>
-         <p class="order-time">9:14 AM</p>
-        </div>
-         <div class="order-arrived">
-            
-             <p>Your cleaner has started cleaning.</p>
-         </div>
- 
-       </div>
-       <div class="main-order-box">
-        <div class="dotted-boxheader">
-       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaner has arrived</p></div>
-         <p class="order-time">9:14 AM</p>
-        </div>
-         <div class="order-arrived">
-            
-             <p>Your cleaner has arrived at your location..</p>
-         </div>
- 
-       </div>
-       <div class="main-order-box">
-        <div class="dotted-boxheader">
-       <div class="order-sub">  <i class="fa-solid fa-check" ></i>  <p class="order-title">Cleaner en route</p></div>
-         <p class="order-time">9:14 AM</p>
-        </div>
-         <div class="order-arrived">
-            
-             <p>Your cleaner is on the way to your location!.</p>
-         </div>
- 
-       </div>
     </div>
-  </div>
-<!-- modals -->
+    <!-- modals -->
 
-
-
+    <!-- <script src="./main.js"></script> -->
+    <script src="./component.js"></script>
     <script>
-    const showModalBtn = document.getElementById('showModalBtn');
-    const showCleaningModal = document.getElementById('showCleaningModal');
-    
-const bottomModal = document.getElementById('bottomModal');
-const cleaningModal = document.getElementById('cleaningModal');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const closecleaningModalBtn =document.getElementById('closecleaningModalBtn')
+      const showModalBtn = document.getElementById("showModalBtn");
+      const showCleaningModal = document.getElementById("showCleaningModal");
 
-showModalBtn.addEventListener('click', () => {
-  bottomModal.style.display = 'block';
-  document.body.style.overflow = 'hidden';
-  home-modal.classList.add('fade-in');
+      const bottomModal = document.getElementById("bottomModal");
+      const cleaningModal = document.getElementById("cleaningModal");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const closecleaningModalBtn = document.getElementById(
+        "closecleaningModalBtn"
+      );
 
-});
+      showModalBtn.addEventListener("click", () => {
+        bottomModal.style.display = "block";
+        document.body.style.overflow = "hidden";
+        home - modal.classList.add("fade-in");
+      });
 
-showCleaningModal.addEventListener('click', () => {
-    cleaningModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-  home-modal.classList.add('fade-in');
-});
+      showCleaningModal.addEventListener("click", () => {
+        cleaningModal.style.display = "block";
+        document.body.style.overflow = "hidden";
+        home - modal.classList.add("fade-in");
+      });
 
-closeModalBtn.addEventListener('click', () => {
-  bottomModal.style.display = 'none';
-  document.body.style.overflow = 'auto'; 
-})
-closecleaningModalBtn.addEventListener('click', () => {
-    cleaningModal.style.display = 'none';
-  document.body.style.overflow = 'auto'; 
-})
+      closeModalBtn.addEventListener("click", () => {
+        bottomModal.style.display = "none";
+        document.body.style.overflow = "auto";
+      });
+      closecleaningModalBtn.addEventListener("click", () => {
+        cleaningModal.style.display = "none";
+        document.body.style.overflow = "auto";
+      });
     </script>
-    
-</body>
-
+  </body>
 </html>
