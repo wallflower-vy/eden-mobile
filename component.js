@@ -1,16 +1,16 @@
-class nav extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=`
+class nav extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
         <nav class="nav">
        <div> <b class="time">9:41</b></div>
        <div > <img src="/assets/wifi.png" alt="wifi" srcset=""></div>
     </nav>
-        `
-    }
+        `;
+  }
 }
-class accordion extends HTMLElement{
-    connectedCallback(){
-            this.innerHTML=`
+class accordion extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
             <div class="accordion">
             <div class="accordion-item">
                 <div class="accordion-header">
@@ -93,14 +93,13 @@ class accordion extends HTMLElement{
             </div>
             <!-- Add more sections if needed -->
         </div>
-            `
-
+            `;
+  }
 }
-}
 
-class dateCodesession extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=`
+class dateCodesession extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
         <div class="dateCodesession">
         <div class="dateCode">
             <div class="date">
@@ -132,12 +131,12 @@ class dateCodesession extends HTMLElement{
     
         </div>
        </div>
-        `
-    }
+        `;
+  }
 }
-class screennineBox extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=`
+class screennineBox extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
         <div class="screennineBox">
         <div class="ham-box">
             <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
@@ -147,14 +146,13 @@ class screennineBox extends HTMLElement{
             <img src="./assets/profile.png" alt="">
         </div>
     </div>
-        `
-    }
+        `;
+  }
 }
 
-
-class homeFooter extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=` <div class="homeFooter">
+class homeFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = ` <div class="homeFooter">
         <div class="home-footer"> 
           <div class="footer-icon">
               <i class="fa-solid fa-house"></i>
@@ -173,13 +171,13 @@ class homeFooter extends HTMLElement{
               <p> Gardener</p>
           </div>
   </div>
-       </div>`
-    }
+       </div>`;
+  }
 }
 
-class homeModal extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=`
+class homeModal extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
         <div class="home-modal" id="bottomModal">
         <div class="modal-content">
          
@@ -231,14 +229,13 @@ class homeModal extends HTMLElement{
            </div>
         </div>
       </div>
-        `
-    }
+        `;
+  }
 }
 customElements.define("app-nav", nav);
 customElements.define("app-accordion", accordion);
-customElements.define("app-datecodesession",dateCodesession )
-customElements.define("app-screennine",screennineBox)
-customElements.define("app-deliverysection", deliverySection)
+customElements.define("app-datecodesession", dateCodesession);
+customElements.define("app-screennine", screennineBox);
+customElements.define("app-deliverysection", deliverySection);
 customElements.define("app-homefooter", homeFooter);
-customElements.define("app-homemodal", homeModal)
-
+customElements.define("app-homemodal", homeModal);

@@ -17,7 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Eden</title>
+    <style>
+      @font-face {
+          font-family: 'cerebri';
+        src:url('./fonts/Cerebri.Sans.Pro/CerebriSansPro-Medium.otf') format('truetype')
+      }
+  </style>
   </head>
   <body class="profile-page">
     <section>
@@ -100,11 +106,28 @@
         </div>
       </div>
     </section>
-
     <section>
-      <app-homefooter></app-homefooter>
+      <div class="home-footer"> 
+        <div class="footer-icon">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+        </div>
+        <div  class="footer-icons" >
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <p>History</p>
+        </div>
+        <div  class="footer-icons">
+            <i class="fa-regular fa-bell"></i>
+            <p>Notification</p>
+        </div>
+        <div  class="footer-icons">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <p> Gardener</p>
+        </div>
+</div>
     </section>
 
+   
     <!-- Modals -->
 
     <div class="home-modal" id="bottomModal">
@@ -242,10 +265,15 @@
         </div>
       </div>
     </div>
+
+    <section>
+   
+    </section>
+
     <!-- modals -->
 
     <!-- <script src="./main.js"></script> -->
-    <script src="./component.js"></script>
+    <script src="component.js"></script>
     <script>
       const showModalBtn = document.getElementById("showModalBtn");
       const showCleaningModal = document.getElementById("showCleaningModal");
