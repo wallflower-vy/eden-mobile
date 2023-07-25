@@ -12,9 +12,9 @@
 </head>
 <body class="profile-page">
     <section>
-        <div>
+        <!-- <div>
             <app-nav></app-nav>
-        </div>
+        </div> -->
     </section>
     <section>
         <div class="screennine-box">
@@ -261,10 +261,14 @@ const closecleaningModalBtn =document.getElementById('closecleaningModalBtn')
 showModalBtn.addEventListener('click', () => {
   bottomModal.style.display = 'block';
   document.body.style.overflow = 'hidden';
+  home-modal.classList.add('fade-in');
+
 });
 
 showCleaningModal.addEventListener('click', () => {
     cleaningModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  home-modal.classList.add('fade-in');
 });
 
 closeModalBtn.addEventListener('click', () => {
